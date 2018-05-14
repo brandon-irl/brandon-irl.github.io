@@ -14,28 +14,45 @@
 
 <body>
 
-	<main role="main" class="container">
+	<main role="main" class="container-fluid">
 
 		<div class="lead-section">
-			<h1>Stay tuned</h1>
-			<p class="lead">This site is still under development
-				<br> In the meantime, check out some of my work</p>
-			<div class="social">
-				<ul>
-					<li>
-						<a target="_blank" title="brandon-irl" href="https://github.com/brandon-irl">
-							<i class="fa fa-lg fa-github"></i>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" title="brandon-irl" href="https://stackoverflow.com/users/1415221">
-							<i class="fa fa-lg fa-stack-overflow"></i>
-						</a>
-					</li>
-				</ul>
+			<div class="lead">
+				<img src="images/profile-picture.png" class="rounded mx-auto d-block"/>
+				Brandon IRL
 			</div>
-			<p class="muted bottom-align-text">
-				<3 Brandon</p>
+
+			<nav id="nav-tab">
+				<div class="nav nav-pills justify-content-center" id="nav-tab" role="tablist">
+					<a class="nav-item nav-link active" id="nav-general-tab" data-toggle="tab" href="#nav-general" role="tab" aria-controls="nav-general" aria-selected="true">General</a>
+					<a class="nav-item nav-link" id="nav-work-tab" data-toggle="tab" href="#nav-work" role="tab" aria-controls="nav-work" aria-selected="false">Work</a>
+					<a class="nav-item nav-link" id="nav-project-tab" data-toggle="tab" href="#nav-project" role="tab" aria-controls="nav-project" aria-selected="false">Projects</a>
+					<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+				</div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab">General stuff</div>
+				<div class="tab-pane fade" id="nav-work" role="tabpanel" aria-labelledby="nav-work-tab">Work stuff</div>
+				<div class="tab-pane fade" id="nav-project" role="tabpanel" aria-labelledby="nav-project-tab">Project stuff</div>
+				<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+					<div class="social">
+						<ul>
+							<li>
+								<a target="_blank" title="brandon-irl" href="https://github.com/brandon-irl">
+									<i class="fa fa-lg fa-github"></i>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" title="brandon-irl" href="https://stackoverflow.com/users/1415221">
+									<i class="fa fa-lg fa-stack-overflow"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
 	</main>
 
