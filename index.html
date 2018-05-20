@@ -14,25 +14,60 @@
 
 <body>
 
-	<main role="main" class="container-fluid">
+	<main role="main" class="container">
 
 		<div class="lead-section">
-			<div class="lead">
-				<img src="images/profile-picture.png" class="rounded mx-auto d-block"/>
-				Brandon IRL
+			<div class="lead profile">
+				<img src="images/profile-picture.png" class="rounded mx-auto d-block profile" /> Brandon IRL
 			</div>
 
 			<nav id="nav-tab">
 				<div class="nav nav-pills justify-content-center" id="nav-tab" role="tablist">
-					<a class="nav-item nav-link active" id="nav-general-tab" data-toggle="tab" href="#nav-general" role="tab" aria-controls="nav-general" aria-selected="true">General</a>
+					<!-- <a class="nav-item nav-link active" id="nav-general-tab" data-toggle="tab" href="#nav-general" role="tab" aria-controls="nav-general" aria-selected="true">General</a> -->
 					<a class="nav-item nav-link" id="nav-work-tab" data-toggle="tab" href="#nav-work" role="tab" aria-controls="nav-work" aria-selected="false">Work</a>
 					<a class="nav-item nav-link" id="nav-project-tab" data-toggle="tab" href="#nav-project" role="tab" aria-controls="nav-project" aria-selected="false">Projects</a>
 					<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
 				</div>
 			</nav>
-			<div class="tab-content" id="nav-tabContent">
-				<div class="tab-pane fade show active" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab">General stuff</div>
-				<div class="tab-pane fade" id="nav-work" role="tabpanel" aria-labelledby="nav-work-tab">Work stuff</div>
+			<div class="tab-content mx-auto" id="nav-tabContent">
+				<!-- <div class="tab-pane fade" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab">General stuff</div> -->
+				<div class="tab-pane fade active show" id="nav-work" role="tabpanel" aria-labelledby="nav-work-tab">
+					<div class="cw">
+						<div class="row">
+							<img class="logo" src="images/ConnectWise-All-Black-Horiz-Logo.png" />
+						</div>
+						<div class="row">
+							<h7>Tampa,FL | Raleigh,NC</h7>
+						</div>
+						<div class="row">
+							<h8>2013 - present</h8>
+						</div>
+						<div class="row mt-3">
+							<p>I started with ConnectWise right out of college as a software engineer working on the product now known as Automate
+								<small>(formerly LabTech)</small>. After the acquisition of ScreenConnect, I moved to Raleigh to help lead the development team. While working here, I've had many wonderful experiences and learning opportunities such as bringing new software products up from scratch, coordinating with different facets of the business such as sales and marketing, and interacting with partners to discover their needs and translate them into key software features.</p>
+							<p>Currently, I am the
+								<strong>development manager and senior software engineer</strong> for
+								<mark>ConnectWise Control</mark>
+								<small>(formerly ScreenConnect)</small>. I'm very grateful to be part of this team where we are responsible for developing and delivering best-in-class, cutting edge software products, and I have the ability to work with some of the smartest developers I've ever met.</p>
+							</p>
+							<h6>Some of the projects I've worked on:</h6>
+							<dl class="ml-4">
+								<dt>Network probe <small class="muted-text">Automate</small></dt>
+								<dl>feature that uses SNMP to discover devices on the network and push agents to them.</dl>
+								<dt>Virtualization Manager <small class="muted-text">Automate</small></dt>
+								<dl>allows the user to monitor and manage VMware ESXi servers running an Automate agent</dl>
+								<dt>Control Integration <small class="muted-text">Automate</small></dt>
+								<dd>provides the ability to launch a Control remoote support session from Automate</dd>
+								<dt>Control iOS App <small class="muted-text">Control</small></dt>
+								<dd>native Xamarin app for controlling remote desktops from an iOS device</dd>
+								<dt>Cloud Control <small class="muted-text">Control</small></dt>
+								<dd>angularjs application that provides a secure frontend to the Control cloud environment APIs</dd>
+								<dt>Work Integrator <small class="muted-text">Control</small></dt>
+								<dd>serverless application that allows for full customization of SDLC automation through proxied webhooks</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
 				<div class="tab-pane fade" id="nav-project" role="tabpanel" aria-labelledby="nav-project-tab">Project stuff</div>
 				<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 					<div class="social">
@@ -45,6 +80,11 @@
 							<li>
 								<a target="_blank" title="brandon-irl" href="https://stackoverflow.com/users/1415221">
 									<i class="fa fa-lg fa-stack-overflow"></i>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" title="balexander@gmail.com" href="mailto:balexander@gmail.com">
+									<i class="fa fa-lg fa-envelope"></i>
 								</a>
 							</li>
 						</ul>

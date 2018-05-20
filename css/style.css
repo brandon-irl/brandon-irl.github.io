@@ -1,3 +1,8 @@
+.profile img{
+    /* TODO use data uri for img once you find one small enough */
+    width: 200px;
+}
+
 .lead-section {
     padding: 3rem 1.5rem;
     text-align: center;
@@ -8,8 +13,21 @@
     font-weight: 300;
 }
 
+.tab-content{
+    width:80%;
+}
+
 #nav-tab{
     margin: 20px 0px 20px 0px;
+}
+
+.cw {
+    /* padding: 0 3rem 0 3rem; */
+    text-align: left;
+}
+
+.cw .logo{
+    width: 200px;
 }
 
 .social {
@@ -63,6 +81,10 @@
 
 .social .fa-stack-overflow:hover { /* round stack overflow icon*/
     background: #FEA501;
+}
+
+.social .fa-envelope:hover{
+    background: #007bff;
 }
 
 .muted {
