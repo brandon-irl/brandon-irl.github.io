@@ -18,23 +18,35 @@
 
 		<div class="lead-section">
 			<div class="lead profile">
-				<img src="images/profile-picture.png" class="rounded mx-auto d-block profile" /> Brandon IRL
+				<img id="profile-pic" src="images/profile-picture.png" class="rounded mx-auto d-block profile" />Brandon Alexander
 			</div>
 
 			<nav id="nav-tab">
 				<div class="nav nav-pills justify-content-center" id="nav-tab" role="tablist">
-					<!-- <a class="nav-item nav-link active" id="nav-general-tab" data-toggle="tab" href="#nav-general" role="tab" aria-controls="nav-general" aria-selected="true">General</a> -->
+					<a class="nav-item nav-link" id="nav-general-tab" data-toggle="tab" href="#nav-general" role="tab" aria-controls="nav-general" aria-selected="true">Home</a>
 					<a class="nav-item nav-link" id="nav-work-tab" data-toggle="tab" href="#nav-work" role="tab" aria-controls="nav-work" aria-selected="false">Work</a>
 					<a class="nav-item nav-link" id="nav-project-tab" data-toggle="tab" href="#nav-project" role="tab" aria-controls="nav-project" aria-selected="false">Projects</a>
 					<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
 				</div>
 			</nav>
 			<div class="tab-content mx-auto" id="nav-tabContent">
-				<!-- <div class="tab-pane fade" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab">General stuff</div> -->
-				<div class="tab-pane fade active show" id="nav-work" role="tabpanel" aria-labelledby="nav-work-tab">
+				<div class="tab-pane fade" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab">
+					<div class="intro">
+						<p>I'm a programmer, SDLC guru, agile coach, comic book here, and development manager.</p>
+
+						<p>I'm a technology advocate who uses it to solve the toughest problems.</p>
+
+						<p>I'm a coach who knows that more is achieved when individuals are empowered and work together with a shared vision.</p>
+
+						<p>I'm a student who seeks to learn from everyone I meet and improve my knowledge every day.</p>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-work" role="tabpanel" aria-labelledby="nav-work-tab">
 					<div class="cw">
 						<div class="row">
-							<img class="logo" src="images/ConnectWise-All-Black-Horiz-Logo.png" />
+							<a href="https://connectwise.com">
+								<img class="logo" src="images/ConnectWise-All-Black-Horiz-Logo.png" />
+							</a>
 						</div>
 						<div class="row">
 							<h7>Tampa,FL | Raleigh,NC</h7>
@@ -52,18 +64,30 @@
 							</p>
 							<h6>Some of the projects I've worked on:</h6>
 							<dl class="ml-4">
-								<dt>Network probe <small class="muted-text">Automate</small></dt>
+								<dt>Network probe
+									<small class="muted-text">Automate</small>
+								</dt>
 								<dl>feature that uses SNMP to discover devices on the network and push agents to them.</dl>
-								<dt>Virtualization Manager <small class="muted-text">Automate</small></dt>
+								<dt>Virtualization Manager
+									<small class="muted-text">Automate</small>
+								</dt>
 								<dl>allows the user to monitor and manage VMware ESXi servers running an Automate agent</dl>
-								<dt>Control Integration <small class="muted-text">Automate</small></dt>
-								<dd>provides the ability to launch a Control remoote support session from Automate</dd>
-								<dt>Control iOS App <small class="muted-text">Control</small></dt>
+								<dt>Control Integration
+									<small class="muted-text">Automate</small>
+								</dt>
+								<dd>provides the ability to launch a Control remote support session from Automate</dd>
+								<dt>Control iOS App
+									<small class="muted-text">Control</small>
+								</dt>
 								<dd>native Xamarin app for controlling remote desktops from an iOS device</dd>
-								<dt>Cloud Control <small class="muted-text">Control</small></dt>
+								<dt>Cloud Control
+									<small class="muted-text">Control</small>
+								</dt>
 								<dd>angularjs application that provides a secure frontend to the Control cloud environment APIs</dd>
-								<dt>Work Integrator <small class="muted-text">Control</small></dt>
-								<dd>serverless application that allows for full customization of SDLC automation through proxied webhooks</dd>
+								<dt>Work Integrator
+									<small class="muted-text">Control</small>
+								</dt>
+								<dd>serverless application that allows for full customization of DevOps automation through proxied webhooks</dd>
 							</dl>
 						</div>
 					</div>
@@ -83,7 +107,7 @@
 								</a>
 							</li>
 							<li>
-								<a target="_blank" title="balexander@gmail.com" href="mailto:balexander@gmail.com">
+								<a target="_blank" title="balexander.eng@gmail.com" href="mailto:balexander@gmail.com">
 									<i class="fa fa-lg fa-envelope"></i>
 								</a>
 							</li>
@@ -91,14 +115,16 @@
 					</div>
 				</div>
 			</div>
-
-
 		</div>
 	</main>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script>
+		var ele= $('#profile-pic')
+		ele.mouseenter(_ => setTimeout(function () { ele.wrap($('<a>', { href: 'ss.html', title: '\"The Steel Shadow\"' }));}, 2000));
+	</script>
 </body>
 
 </html>
