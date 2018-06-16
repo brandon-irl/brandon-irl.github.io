@@ -28,6 +28,9 @@
 
 		.fill {
 			height: 100%;
+		}
+
+		.carousel-inner img {
 			margin: auto;
 		}
 	</style>
@@ -80,9 +83,10 @@
 
 			$('.carousel-item').first().addClass('active');
 			$('.carousel-indicators > li').first().addClass('active');
-			$('#ss-carousel').carousel();
+			$('#ss-carousel').carousel('pause');
 
 			function createPageSlide(url) {
+				url = url + '?format='+Math.floor($('.container').height())+'w';
 				var item = $('<div />', { class: 'carousel-item' });
 				item.append($('<img>', { class: "d-block fill", src: url }));
 				return item;
