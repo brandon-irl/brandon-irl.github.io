@@ -13,8 +13,8 @@
     font-weight: 300;
 }
 
-.tab-content{
-    width:80%;
+.tab-content{ 
+    max-width: 600px;
 }
 
 #nav-tab{
