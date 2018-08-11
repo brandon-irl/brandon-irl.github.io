@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	<title>Steel Shadow</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -86,7 +86,7 @@
 			$('#ss-carousel').carousel('pause');
 
 			function createPageSlide(url) {
-				url = url + '?format='+Math.floor($('.container').height())+'w';
+				url = url + '?format=' + Math.floor($('.container').height()) + 'w';
 				var item = $('<div />', { class: 'carousel-item' });
 				item.append($('<img>', { class: "d-block fill", src: url }));
 				return item;
