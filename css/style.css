@@ -1,3 +1,63 @@
+
+body, html {
+    height: 100%;
+    display: grid;
+    animation: colorchange 20s; /* animation-name followed by duration in seconds*/
+    -moz-animation:colorchange 20s infinite; /* Firefox */
+    -webkit-animation: colorchange 20s infinite; /* Chrome and Safari */
+    font-family: "Lato",Arial,sans-serif;
+    overflow: hidden;
+}
+
+@keyframes colorchange {
+    0%   {background: #FF6347;}
+    10%  {background: #343434;}
+    20%  {background: #F5DEB3;}
+    30%  {background: #87CEEB;}
+    40%  {background: #20B2AA;}
+    50%  {background: #9ACD32;}
+    60%  {background: #2E8B57;}
+    70%  {background: #A9A9A9;}
+    80%  {background: #CD5C5C;}
+    90%  {background: #778899;}
+    100% {background: #FEA501;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+    0%   {background: #FF6347;}
+    10%  {background: #343434;}
+    20%  {background: #F5DEB3;}
+    30%  {background: #87CEEB;}
+    40%  {background: #20B2AA;}
+    50%  {background: #9ACD32;}
+    60%  {background: #2E8B57;}
+    70%  {background: #A9A9A9;}
+    80%  {background: #CD5C5C;}
+    90%  {background: #778899;}
+    100% {background: #FEA501;}
+}
+
+.tagline {
+    margin: auto;
+    box-sizing: border-box;
+    font-size: 66px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.tagline span {
+    /*background: rgba(255,255,255,0.3);*/
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    border-radius: 3px;
+}
+
+.profile {
+    color: #FFF;
+}
+
 .profile img{
     /* TODO use data uri for img once you find one small enough */
     width: 200px;
@@ -13,11 +73,11 @@
     font-weight: 300;
 }
 
-.tab-content{ 
+.tab-content { 
     max-width: 600px;
 }
 
-#nav-tab{
+#nav-tab {
     margin: 20px 0px 20px 0px;
 }
 
@@ -26,11 +86,11 @@
     text-align: left;
 }
 
-.intro{
+.intro {
     text-align: left;
 }
 
-.cw .logo{
+.cw .logo {
     width: 200px;
 }
 
@@ -40,7 +100,6 @@
 }
 
 .social ul {
-    margin: 0;
     padding: 5px;
 }
 
@@ -87,7 +146,7 @@
     background: #FEA501;
 }
 
-.social .fa-envelope:hover{
+.social .fa-envelope:hover {
     background: #007bff;
 }
 
