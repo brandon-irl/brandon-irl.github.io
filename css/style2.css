@@ -158,17 +158,47 @@ section.rsec .ritem .rdate {
 	font-size: 1em;
 }
 
+.badge-list li i {
+	padding: .3em;
+	display: inline-block;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	/* border-radius: 10rem; */
+}
+.badge-list li span:hover {
+	color: #fff;
+	background-color: #17a2b8;
+}
+
 .badge-list .gitlab:hover {
 	color: #e65328;
 }
 .badge-list .jira:hover {
 	color: #0052CC;
 }
+.badge-list .angular:hover {
+	color: #E23237;
+}
+.badge-list .aws:hover {
+	color: #ff9900;
+}
 .badge-list .\.net:hover {
-	color:white;
-	background: #68217a;
+	color: #fff;
+	background-color: #68217a;
+}
+.badge-list .git:hover {
+	color: #000;
+}
+.badge-list .windows:hover {
+	color: #00ccff;
+}
+.badge-list .linux:hover {
+	color: #fff;		
+	background-color: #efb91f;
 }
 .badge-list .kanban:hover {
 	color:white;
-	background: #007bff;
+	background-color: #007bff;
 }

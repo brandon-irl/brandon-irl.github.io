@@ -21,6 +21,8 @@ String.format = function () {
 		'windows': { name: 'Windows', presentationType: 'image' },
 		'linux': { name: 'Linux', presentationType: 'image' },
 		'apple': { name: 'Apple', presentationType: 'image' },
+		'git': { name: 'git', presentationType: 'image' },
+		'photoshop': { name: 'adobe', presentationType: 'image' }
 	};
 
 	var getBadgeForSkill = function (skill) {
@@ -29,10 +31,14 @@ String.format = function () {
 
 		switch (skill.presentationType) {
 			case 'image':
-				return $('<i/>').addClass(String.format('fab fa-lg fa-{0} {0}', skill.name.toLowerCase()));
+				return $('<i/>')
+					.addClass(String.format('fab fa-lg fa-{0} {0}', skill.name.toLowerCase()))
+					.prop("title", skill.name);
 			case 'pill':
 			default:
-				return $('<span></span>').addClass('badge badge-pill ' + skill.name.toLowerCase()).html(skill.name);
+				return $('<span></span>')
+					.addClass('badge badge-pill ' + skill.name.toLowerCase()).html(skill.name)
+					.prop("title", skill.name);
 		}
 	};
 
