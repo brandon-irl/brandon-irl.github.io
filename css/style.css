@@ -1,102 +1,204 @@
-.profile img{
-    /* TODO use data uri for img once you find one small enough */
-    width: 200px;
+body {
+	font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	padding-top: 54px;
+	color: #868e96;
 }
 
-.lead-section {
-    padding: 3rem 1.5rem;
-    text-align: center;
+@media (min-width: 992px) {
+	body {
+		padding-top: 0;
+		padding-left: 17rem;
+	}
 }
 
-.lead {
-    font-size: 1.25rem;
-    font-weight: 300;
+.bg-primary {
+	background-color:#CCC !important
 }
 
-.tab-content{ 
-    max-width: 600px;
+#sideNav .navbar-brand .img-profile {
+	max-width: 10rem;
+	max-height: 10rem;
+	border: 0.5rem solid rgba(255, 255, 255, 0.2);
 }
 
-#nav-tab{
-    margin: 20px 0px 20px 0px;
+@media (min-width: 992px) {
+	#sideNav {
+		text-align: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		width: 17rem;
+		height: 100vh;
+	}
+	#sideNav .navbar-brand {
+		order: 1;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin: auto auto 0;
+		padding: 0.5rem;
+	}
+	#sideNav .navbar-brand .img-profile {
+		max-width: 10rem;
+		max-height: 10rem;
+		border: 0.5rem solid rgba(255, 255, 255, 0.2);
+	}
+	#sideNave .navbar-toggler{
+		order: 2;
+	}
+	#sideNav .navbar-collapse {
+		order: 3;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: flex-start;
+		-webkit-box-flex: 0;
+		-ms-flex-positive: 0;
+		flex-grow: 0;
+		width: 100%;
+		margin-bottom: auto;
+	}
+	#sideNav .navbar-collapse .navbar-nav {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		width: 100%;
+	}
+	#sideNav .navbar-collapse .navbar-nav .nav-item {
+		display: block;
+	}
+	#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+		display: block;
+	}
+	#sideNav .social {
+		order: 4;
+	}
+  }
+
+i.soc-badge {
+	width: 40px;
+	height: 40px;
+	color: #FFF;
+	background-color: #909AA0;
+	font-size: 22px;
+	text-align:center;
+	padding-top: 12px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	margin:5px;
 }
 
-.cw {
-    /* padding: 0 3rem 0 3rem; */
-    text-align: left;
+i.soc-badge:hover {
+	color: #FFF;
+	text-decoration: none;
+	transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
 }
 
-.intro{
-    text-align: left;
+i.fa-github:hover { /* round github icon*/
+	background: #343434;
 }
 
-.cw .logo{
-    width: 200px;
+i.fa-stack-overflow:hover { /* round stack overflow icon*/
+	background: #FEA501;
 }
 
-.social {
-    margin: 0;
-    padding: 0;
+i.fa-envelope:hover{
+	background: #007bff;
 }
 
-.social ul {
-    margin: 0;
-    padding: 5px;
+section.rsec {
+	padding-top: 5rem !important;
+	padding-bottom: 5rem !important;
+	max-width: 75rem;
 }
 
-.social ul li {
-    margin: 5px;
-    list-style: none outside none;
-    display: inline-block;
+section.rsec .ritem .rdate {
+	min-width: none;
 }
 
-.social i {
-    width: 40px;
-    height: 40px;
-    color: #FFF;
-    background-color: #909AA0;
-    font-size: 22px;
-    text-align:center;
-    padding-top: 12px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
+@media (min-width: 768px) {
+	section.rsec {
+		min-height: 100vh;
+	}
+	section.rsec .ritem .rdate {
+		min-width: 18rem;
+	}
 }
 
-.social i:hover {
-    color: #FFF;
-    text-decoration: none;
-    transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-}
-
-.social .fa-github:hover { /* round github icon*/
-    background: #343434;
-}
-
-.social .fa-stack-overflow:hover { /* round stack overflow icon*/
-    background: #FEA501;
-}
-
-.social .fa-envelope:hover{
-    background: #007bff;
+@media (min-width: 992px) {
+	section.rsec {
+		padding-top: 3rem !important;
+		padding-bottom: 3rem !important;
+	}
 }
 
 .muted {
-    color: rgba(0,0,0,.35);
+	color: rgba(0,0,0,.35);
+	font-size: 1em;
 }
 
-.bottom-align-text {
-    position: absolute;
-    bottom: 0;
-    right: 50%;
+.badge-list li i {
+	padding: .3em;
+	display: inline-block;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	/* border-radius: 10rem; */
+}
+.badge-list li span:hover {
+	color: #fff;
+	background-color: #17a2b8;
+}
+
+.badge-list .gitlab:hover {
+	color: #e65328;
+}
+.badge-list .jira:hover {
+	color: #0052CC;
+}
+.badge-list .angular:hover {
+	color: #E23237;
+}
+.badge-list .aws:hover {
+	color: #ff9900;
+}
+.badge-list .\.net:hover {
+	color: #fff;
+	background-color: #68217a;
+}
+.badge-list .git:hover {
+	color: #000;
+}
+.badge-list .windows:hover {
+	color: #00ccff;
+}
+.badge-list .linux:hover {
+	color: #fff;		
+	background-color: #efb91f;
+}
+.badge-list .kanban:hover {
+	color:white;
+	background-color: #007bff;
 }
