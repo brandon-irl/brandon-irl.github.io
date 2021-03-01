@@ -12,6 +12,9 @@ String.format = function () {
 	"use strict";
 
 	var skills = {
+		'react': {name: 'React', presentationType: 'image'},
+		'docker': {name: 'Docker', presentationType: 'image'},
+		'javascript': {name: 'JS', presentationType: 'image'},
 		'gitlab': { name: 'GitLab', presentationType: 'image' },
 		'jira': { name: 'Jira', presentationType: 'image' },
 		'.net': { name: '.NET', presentationType: 'pill' },

@@ -171,7 +171,15 @@ section.rsec .ritem .rdate {
 	color: #fff;
 	background-color: #17a2b8;
 }
-
+.badge-list .react:hover {
+	color: #61dafb;
+}
+.badge-list .docker:hover {
+	color: #36a1f0;
+}
+.badge-list .js:hover {
+	color: #fcdc00;
+}
 .badge-list .gitlab:hover {
 	color: #e65328;
 }
