@@ -210,3 +210,6 @@ section.rsec .ritem .rdate {
 	color:white;
 	background-color: #007bff;
 }
+.badge-list .python:hover{
+	color: #4382b4;
+}

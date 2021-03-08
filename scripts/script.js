@@ -12,11 +12,14 @@ String.format = function () {
 	"use strict";
 
 	var skills = {
+		'c': { name: 'C', presentationType: 'pill' },
+		'python': { name: 'Python', presentationType: 'image' },
 		'react': { name: 'React', presentationType: 'image' },
 		'docker': { name: 'Docker', presentationType: 'image' },
 		'javascript': { name: 'JS', presentationType: 'image' },
 		'gitlab': { name: 'GitLab', presentationType: 'image' },
 		'jira': { name: 'Jira', presentationType: 'image' },
+		'c#': { name: 'C#', presentationType: 'pill' },
 		'.net': { name: '.NET', presentationType: 'pill' },
 		'angular': { name: 'Angular', presentationType: 'image' },
 		'aws': { name: 'AWS', presentationType: 'image' },
