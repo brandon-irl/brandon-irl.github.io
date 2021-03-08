@@ -12,9 +12,9 @@ String.format = function () {
 	"use strict";
 
 	var skills = {
-		'react': {name: 'React', presentationType: 'image'},
-		'docker': {name: 'Docker', presentationType: 'image'},
-		'javascript': {name: 'JS', presentationType: 'image'},
+		'react': { name: 'React', presentationType: 'image' },
+		'docker': { name: 'Docker', presentationType: 'image' },
+		'javascript': { name: 'JS', presentationType: 'image' },
 		'gitlab': { name: 'GitLab', presentationType: 'image' },
 		'jira': { name: 'Jira', presentationType: 'image' },
 		'.net': { name: '.NET', presentationType: 'pill' },
@@ -45,7 +45,7 @@ String.format = function () {
 		}
 	};
 
-	$('#experience div .ritem .resume-content ul').each(function () {
+	$('.skills-list').each(function () {
 		var that = $(this);
 		var s = that.attr('skills');
 		if (s) {
