@@ -127,6 +127,10 @@ i.fa-envelope:hover{
 	background: #007bff;
 }
 
+i.fa-linkedin:hover{
+	background: #0a66c2
+}
+
 section.rsec {
 	padding-top: 5rem !important;
 	padding-bottom: 5rem !important;
